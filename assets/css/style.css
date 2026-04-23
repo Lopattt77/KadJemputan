@@ -767,3 +767,68 @@ main.main-invitation {
         padding: 0.6rem 0.8rem;
     }
 }
+
+/* ============================================================
+   Wedding Invitation — specific styles
+   ============================================================ */
+
+/* Cover: couple names on the cover page */
+.cover-couple-names {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: clamp(0.75rem, 2.2vw, 0.95rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    line-height: 1.4;
+}
+
+.cover-couple-dan {
+    font-family: var(--font-script);
+    font-size: 1.6rem;
+    color: var(--gold);
+    line-height: 1.2;
+    opacity: 0.9;
+}
+
+/* Inner card: side label above parent names */
+.invite-parent-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.85;
+}
+
+/* Inner card: couple names block */
+.invite-couple {
+    margin-top: 0.5rem;
+}
+
+.invite-groom-name,
+.invite-bride-name {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+}
+
+.invite-couple-with {
+    font-family: var(--font-script);
+    font-size: 1.4rem;
+    color: var(--gold);
+    opacity: 0.9;
+    line-height: 1.2;
+}
+
+@media (max-width: 576px) {
+    .invite-groom-name,
+    .invite-bride-name {
+        font-size: 0.95rem;
+    }
+}
+}

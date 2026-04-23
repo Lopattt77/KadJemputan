@@ -1,0 +1,163 @@
+/**
+ * Wedding Invitation — Navy Blue & Gold theme override
+ * Loaded after style.css to override the warm peach/cream palette.
+ */
+
+:root {
+    --cream:       #eef1fa;
+    --cream-dark:  #e2e8f6;
+    --blush-pink:  #c8d4f0;
+    --sage:        #a8bde8;
+    --sage-dark:   #7096d4;
+    --peach:       #b8cce8;
+    --peach-dark:  #8aaed8;
+    --gold:        #d4af37;
+    --gold-soft:   rgba(212, 175, 55, 0.25);
+    --charcoal:    #0d1b3e;
+    --text:        #0d1b3e;
+    --text-muted:  #3a5080;
+    --card-bg:     rgba(255, 255, 255, 0.96);
+    --shadow:      0 1rem 3rem rgba(13, 27, 62, 0.12);
+}
+
+/* Page background */
+body.invitation-body {
+    background: linear-gradient(135deg, #eef1fa 0%, #c8d4f0 100%);
+}
+
+/* Cover page: keep white but add a subtle navy border tint */
+.cover-page {
+    background: #ffffff;
+}
+
+/* Cover corners: navy tones */
+.cover-corner--tl {
+    background:
+        radial-gradient(ellipse at 30% 30%, var(--peach) 0%, transparent 55%),
+        radial-gradient(ellipse at 70% 70%, var(--blush-pink) 0%, transparent 55%);
+}
+
+.cover-corner--tr {
+    background:
+        radial-gradient(ellipse at 70% 30%, var(--sage) 0%, transparent 55%),
+        radial-gradient(ellipse at 30% 70%, var(--peach) 0%, transparent 55%);
+}
+
+.cover-corner--bl {
+    background:
+        radial-gradient(ellipse at 40% 70%, var(--sage) 0%, transparent 55%),
+        radial-gradient(ellipse at 60% 30%, var(--blush-pink) 0%, transparent 55%);
+}
+
+.cover-corner--br {
+    background:
+        radial-gradient(ellipse at 60% 60%, var(--peach) 0%, transparent 50%),
+        radial-gradient(ellipse at 40% 40%, var(--sage) 0%, transparent 50%);
+}
+
+/* Floating background shapes */
+.shape-1 {
+    background: radial-gradient(circle, var(--peach) 0%, transparent 70%);
+}
+
+.shape-2 {
+    background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+}
+
+.shape-4 {
+    background: radial-gradient(circle, rgba(168, 189, 232, 0.6) 0%, transparent 70%);
+}
+
+/* Inner card floral accents */
+.invite-floral-accent--tl,
+.invite-floral-accent--bl {
+    background: radial-gradient(ellipse, var(--sage) 0%, transparent 65%);
+}
+
+.invite-floral-accent--tr,
+.invite-floral-accent--br {
+    background: radial-gradient(ellipse, var(--peach) 0%, transparent 65%);
+}
+
+/* Countdown section */
+#countdownSection {
+    background: linear-gradient(135deg, rgba(238, 241, 250, 0.9) 0%, rgba(200, 212, 240, 0.5) 100%) !important;
+}
+
+/* Detail tiles */
+.detail-tile {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, var(--cream) 100%);
+}
+
+/* Location badge inside tile */
+.detail-tile .badge {
+    background: linear-gradient(135deg, var(--peach) 0%, var(--blush-pink) 100%) !important;
+}
+
+/* Cover couple names: gold colour */
+.cover-couple-dan {
+    color: var(--gold);
+}
+
+/* Couple names inside card */
+.invite-groom-name,
+.invite-bride-name {
+    color: var(--charcoal);
+}
+
+/* Primary button (RSVP, cover open) */
+.btn-primary {
+    background: linear-gradient(135deg, #1a3a7a 0%, #0d1b3e 100%) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(135deg, #243f80 0%, #1a2a5e 100%) !important;
+}
+
+/* Cover open button */
+.btn-cover-open {
+    background: linear-gradient(135deg, #1a3a7a, #0d1b3e);
+    color: #fff;
+    border: none;
+}
+
+.btn-cover-open:hover {
+    background: linear-gradient(135deg, #243f80, #1a2a5e);
+    color: #fff;
+}
+
+/* Accent button (Add to Calendar) */
+.btn-accent {
+    background: var(--sage) !important;
+    border-color: var(--sage) !important;
+    color: var(--charcoal) !important;
+}
+
+.btn-accent:hover {
+    background: var(--sage-dark) !important;
+    border-color: var(--sage-dark) !important;
+}
+
+/* Outline accent (audio toggle) */
+.btn-outline-accent {
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+}
+
+.btn-outline-accent:hover {
+    background: rgba(212, 175, 55, 0.12) !important;
+}
+
+/* Divider line */
+.cover-divider-line,
+hr.divider {
+    border-color: var(--gold-soft);
+}
+
+/* Map modal buttons */
+.modal-content {
+    background: #f8faff !important;
+}
